@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mata Mosquio</title>
+    <script src="assets/js/game.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body onresize="adjustSize()">
+
+
+    <div class="painel">
+        <div class="vidas">
+            <img id="v1" src="./assets/img/coracao_cheio.png" alt="">
+            <img id="v2" src="./assets/img/coracao_cheio.png" alt="">
+            <img id="v3" src="./assets/img/coracao_cheio.png" alt="">
+        </div>
+        <div class="cronometro">
+            Tempo Restante: <span id="cronometro"></span>
+        </div>
+    </div>
+
+
+    <script src="assets/js/game.js"></script>
+
+    <script>
+
+        document.getElementById('cronometro').innerHTML = time
+
+         var createMosquito = setInterval(() => {
+            positionRandom();
+        }, createMosquito);
+
+
+
+    </script>
+</body>
+
+</html>
